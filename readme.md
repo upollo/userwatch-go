@@ -2,6 +2,8 @@
 
 ## Usage
 
+For a full example see [userwat.ch/docs/golang-library](https://userwat.ch/docs/golang-library)
+
 ```go
 client, err := userwatchgo.NewClientBuilder(API_KEY).Build()
 
