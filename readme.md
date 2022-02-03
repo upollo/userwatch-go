@@ -2,6 +2,8 @@
 
 ## Usage
 
+For a full example see [userwat.ch/docs/golang-library](https://userwat.ch/docs/golang-library)
+
 ```go
 client, err := userwatchgo.NewClientBuilder(API_KEY).Build()
 
@@ -19,9 +21,9 @@ client.Validate(ctx, &userwatchgo.ValidationRequest{
     wget https://raw.githubusercontent.com/Userwatch/userwatch-proto/userwatch_shared.proto
 
     protoc  \
-        --proto_path=protos \
+        --proto_path= \
         --go_out=. \
         --go-grpc_out=. \
-        protos/userwatch_shared.proto protos/userwatch_shepherd.proto
+        userwatch_shared.proto userwatch_shepherd.proto
 
     mv github.com/Userwatch/userwatch-go/* .
