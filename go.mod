@@ -1,4 +1,4 @@
-module github.com/Userwatch/userwatch-go
+module github.com/upollo/userwatch-go
 
 go 1.17
 
