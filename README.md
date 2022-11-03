@@ -1,29 +1,14 @@
-# Userwatch Client Library for golang
+# Upollo Go Client
+
+The [Upollo](https://upollo.ai) golang library can be used identify users
+before they login or if they visit from multiple devices.
+
+The Go library runs on your server and can be paired with the web or mobile
+library to protect logins or payments.
 
 ## Usage
 
-For a full example see [userwat.ch/docs/golang-library](https://userwat.ch/docs/golang-library)
-
-```go
-client, err := userwatchgo.NewClientBuilder(API_KEY).Build()
-
-client.Verify(ctx, &userwatchgo.ValidationRequest{
-    ValidationToken: request.UserwatchToken, // get the validation token from the javascript library
-    Userinfo: &userwatchgo.UserInfo{
-        UserID: request.Username,
-    },
-})
-```
-
-## Generating the go lib with protoc
-
-    wget https://raw.githubusercontent.com/Userwatch/userwatch-proto/userwatch_sheperd.proto
-    wget https://raw.githubusercontent.com/Userwatch/userwatch-proto/userwatch_shared.proto
-
-    protoc  \
-        --proto_path= \
-        --go_out=. \
-        --go-grpc_out=. \
-        userwatch_shared.proto userwatch_shepherd.proto
-
-    mv github.com/Userwatch/userwatch-go/* .
+See
+[upollo.ai/docs/examples/verify](https://upollo.ai/docs/examples/verify)
+for an example, or the reference at
+[upollo.ai/docs/reference/server-libraries](https://upollo.ai/docs/reference/server-libraries).
