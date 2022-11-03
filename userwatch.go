@@ -1,4 +1,4 @@
-package userwatchgo
+package upollo
 
 import (
 	context "context"
@@ -31,7 +31,7 @@ type ClientOptions struct {
 func NewClientBuilder(apiKey string) *ClientOptions {
 	return &ClientOptions{
 		apiKey:     apiKey,
-		url:        "api.userwat.ch:443",
+		url:        "api.upollo.ai:443",
 		requireTls: true,
 	}
 }
