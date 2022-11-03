@@ -7,7 +7,7 @@ For a full example see [userwat.ch/docs/golang-library](https://userwat.ch/docs/
 ```go
 client, err := userwatchgo.NewClientBuilder(API_KEY).Build()
 
-client.Validate(ctx, &userwatchgo.ValidationRequest{
+client.Verify(ctx, &userwatchgo.ValidationRequest{
     ValidationToken: request.UserwatchToken, // get the validation token from the javascript library
     Userinfo: &userwatchgo.UserInfo{
         UserID: request.Username,
