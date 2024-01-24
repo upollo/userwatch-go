@@ -6,6 +6,24 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ## [Unreleased]
 
+### Changed
+
+### Removed
+
+### Added
+
+## [0.2.3]
+
+### Changed
+
+- Updated various dependencies.
+
+### Added
+
+- TRIALED_ON_OTHER_ACCOUNT flag type, which is available for customers with billing
+  and subscription data connected.
+- COMMERCIAL_USER, PAYMENT_NAME_DIFFERS and LIMITED_DEVICE_INFORMATION flag types.
+
 ## [0.2.2]
 
 ### Removed
